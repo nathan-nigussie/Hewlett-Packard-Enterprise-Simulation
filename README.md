@@ -1,4 +1,5 @@
-### Project: Employee Management RESTful Web Service
+### Hewlett Packard Enterprise's Software Engineering 
+### Employee Management RESTful Web Service
 This project, developed as part of an Hewlett Packard Enterprise's, demonstrates a RESTful web service designed to manage a list of employees. It includes:
 
 - Proposal Development: A detailed proposal outlining the structure and functionality of a RESTful web service aimed at managing employee data.
