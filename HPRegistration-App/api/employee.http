@@ -1,0 +1,78 @@
+### Find All Employees
+
+GET http://localhost:8080/api/employees
+
+### Find  Employee By ID
+
+GET http://localhost:8080/api/employees/7
+
+### Find  Employee By ID that doesn't exist
+
+GET http://localhost:8080/api/employees/1000
+
+### Create New Employee
+
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+  "title": "Mr",
+  "full_name": "Msdsr",
+  "gender": "male",
+  "age": 2588,
+  "email": "John2sadas02@gmail.com",
+  "phone_number": 31257851,
+  "hire_date": "2024-08-26T17:29:39.130Z",
+  "department": "Accoasfdsaunting"
+
+
+}
+
+
+### Update existing Employee Record
+PUT http://localhost:8080/api/employees/1
+Content-Type: application/json
+
+{
+  "id": 5,
+  "title": "Mr",
+  "full_name": "Msdsr",
+  "gender": "male",
+  "age": 2588,
+  "email": "John2sadas02@gmail.com",
+  "phone_number": 31257851,
+  "hire_date": "2024-08-26T17:29:39.130Z",
+  "department": "Accoasfdsaunting"
+
+
+}
+
+
+
+### Create New Employee with invalid phone number
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+  "title": "Mr",
+  "full_name": "John David",
+  "email": "John202@gmail.com",
+  "phone_number": "invalid string input",
+  "hire_date": "2024-08-26T17:29:39.130Z",
+  "department": "Accounting",
+  "phone_number": 31257851,
+  "hire_date": "2024-08-26T17:29:39.130Z",
+  "department": "Accounting"
+
+}
+### Retrieve all employees  sorted with specific field e.g. with email and ascending order
+GET http://localhost:8080/api/employees/sorted-by-email
+
+### Retrieve all employees dynamically sorted with any required fields e.g. with Full_name
+GET http://localhost:8080/api/employees/sorted?sortBy=full_name
+
+### filter all employees with any required fields e.g. with department
+GET http://localhost:8080/api/employees/department/accounting
+
+### filter all employees with any required fields e.g. with gender
+GET http://localhost:8080/api/employees/gender/Male
